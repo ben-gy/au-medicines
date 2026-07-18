@@ -245,4 +245,17 @@ describe('buildInsights', () => {
   it('gives every card a unique id', () => {
     expect(new Set(insights.map((i) => i.id)).size).toBe(insights.length);
   });
+
+  it('describes a fall to exactly zero as a delisting, not collapsing demand', () => {
+    const delisted = drug({
+      id: 'delisted',
+      name: 'DELISTEDDRUG',
+      total: 1_000_000,
+      ms: [...new Array(12).fill(10000), ...new Array(12).fill(0)],
+    });
+    const cards = buildInsights({ ...data, drugs: [...drugs, delisted], byId: new Map() });
+    const card = cards.find((i) => i.id === 'collapsing');
+    expect(card?.title).toContain('no longer being dispensed');
+    expect(card?.body).toContain('delisted');
+  });
 });

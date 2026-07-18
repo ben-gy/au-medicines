@@ -238,13 +238,22 @@ export function buildInsights(data: Dataset): Insight[] {
     });
   }
   if (down[0]) {
+    // A medicine that falls to exactly zero has almost always been delisted from
+    // the PBS rather than abandoned by prescribers — saying "demand collapsed"
+    // would be the wrong story.
+    const stopped = down[0].current === 0;
     out.push({
       id: 'collapsing',
       severity: 'warn',
-      title: `${titleCase(down[0].drug.name)} prescriptions have fallen ${((1 - down[0].ratio) * 100).toFixed(0)}%`,
-      body:
-        `Down from ${fmtCount(down[0].prior)} to ${fmtCount(down[0].current)} prescriptions year on year — ` +
-        `the sharpest decline among medicines that were being dispensed in volume.`,
+      title: stopped
+        ? `${titleCase(down[0].drug.name)} is no longer being dispensed on the PBS`
+        : `${titleCase(down[0].drug.name)} prescriptions have fallen ${((1 - down[0].ratio) * 100).toFixed(0)}%`,
+      body: stopped
+        ? `${fmtCount(down[0].prior)} prescriptions in the previous 12 months and none at all in the latest 12. ` +
+          `A drop to exactly zero normally means the medicine was delisted from the Schedule, not that prescribing stopped — ` +
+          `patients may have moved to an alternative brand or strength that carries a different item code.`
+        : `Down from ${fmtCount(down[0].prior)} to ${fmtCount(down[0].current)} prescriptions year on year — ` +
+          `the sharpest decline among medicines that were being dispensed in volume.`,
       drugId: down[0].drug.id,
     });
   }

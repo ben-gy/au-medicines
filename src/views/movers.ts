@@ -107,7 +107,8 @@ export const moversView: View = {
         'Each line joins a medicine’s total for the previous twelve months to its total for the latest twelve. The axis is logarithmic, so a steeper line is a bigger multiple, not a bigger number. Click any line for the full profile.',
       controls: segmented('mmetric', METRICS, metric),
       legend:
-        '<span class="legend-note">Only medicines already being dispensed in volume qualify, so a handful of scripts cannot manufacture a dramatic multiple.</span>',
+        '<span class="legend-note">Only medicines already being dispensed in volume qualify, so a handful of scripts cannot manufacture a dramatic multiple. ' +
+        'A fall to zero usually means the item was delisted from the Schedule rather than prescribing stopping.</span>',
       body: `<div class="slope-grid">
         ${slopeChart(up, 'Growing fastest', fmtFull, 'up')}
         ${slopeChart(down, 'Falling fastest', fmtFull, 'down')}
