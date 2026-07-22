@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // Domain jargon, explained for someone who has never read a PBS report.
 // Surfaced through `ℹ` buttons next to every term in the UI (see components/glossary.ts).
 

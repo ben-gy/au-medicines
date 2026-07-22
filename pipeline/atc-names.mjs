@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // WHO Anatomical Therapeutic Chemical (ATC) classification — level 1 (anatomical
 // main group) and level 2 (therapeutic subgroup) nomenclature. Standard, stable
 // terminology; the PBS data ships ATC5 codes only, with no names attached.

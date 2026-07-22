@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 import { atcColor, ATC_ORDER } from '../colors';
 import { card, esc, atcLegend, type View } from '../app';
 import { count, countFull, money, moneyCents, moneyFull } from '../format';

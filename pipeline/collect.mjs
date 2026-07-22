@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // Downloads the PBS "Date of Supply" supplementary reports (one CSV per
 // financial year, monthly rows by PBS item code) plus the item→drug→ATC5 map.
 //

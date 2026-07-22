@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // Pure analysis over the loaded dataset: rolling windows, movers, distributions
 // and the auto-detected insights. Everything here is deterministic and unit-tested.
 

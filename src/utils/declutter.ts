@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // Label de-collision for charts where marks can land arbitrarily close
 // together — the slope chart in particular, where a log axis routinely stacks
 // several medicines within a few pixels and their names overprint each other.

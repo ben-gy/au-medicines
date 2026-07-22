@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 // One colour per ATC anatomical group, used identically in every view — the
 // rankings bars, the sunburst rings, the scatter dots, the trend bands and the
 // matrix legend. A medicine is the same colour everywhere it appears.
