@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T05:26:54.600Z",
+  "generated": "2026-09-09T09:01:49.797Z",
   "months": [
     "202007",
     "202008",
@@ -69,7 +69,10 @@
     "202512",
     "202601",
     "202602",
-    "202603"
+    "202603",
+    "202604",
+    "202605",
+    "202606"
   ],
   "monthLabels": [
     "Jul 2020",
@@ -140,16 +143,19 @@
     "Dec 2025",
     "Jan 2026",
     "Feb 2026",
-    "Mar 2026"
+    "Mar 2026",
+    "Apr 2026",
+    "May 2026",
+    "Jun 2026"
   ],
-  "drugCount": 1013,
-  "itemCount": 12119,
-  "rowCount": 2047223,
+  "drugCount": 1019,
+  "itemCount": 12162,
+  "rowCount": 2146491,
   "totals": {
-    "scripts": 1880035256,
-    "govt": 68269303705,
-    "patient": 18282475138,
-    "total": 86551778843
+    "scripts": 1963031006,
+    "govt": 71753182895,
+    "patient": 19166204799,
+    "total": 90919387694
   },
   "sources": [
     {
@@ -177,8 +183,8 @@
       "url": "https://www.pbs.gov.au/statistics/dos-and-dop/files/dos-jul-2024-to-jun-2025-phrmcy-type.csv"
     },
     {
-      "name": "dos-jul-2025-to-mar-2026-phrmcy-type.csv",
-      "url": "https://www.pbs.gov.au/statistics/dos-and-dop/files/dos-jul-2025-to-mar-2026-phrmcy-type.csv"
+      "name": "dos-jul-2025-to-jun-2026-phrmcy-type.csv",
+      "url": "https://www.pbs.gov.au/statistics/dos-and-dop/files/dos-jul-2025-to-jun-2026-phrmcy-type.csv"
     }
   ],
   "sourcePage": "https://www.pbs.gov.au/statistics/dos-and-dop/dos-and-dop"
